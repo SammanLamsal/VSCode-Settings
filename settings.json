@@ -1,0 +1,34 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "vim.leader": "<Space>",
+    "vim.enableNeovim": true,
+    "vim.useSystemClipboard": true,
+    "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Jetbrains Mono NL",
+    "editor.fontSize": 13,
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<Leader>", "e", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+
+        // SWITCHING TABS
+        {
+            "before": ["<S-h>"], "commands": [":bprevious"]
+        },
+        {
+            "before": ["<S-l>"], "commands": [":bnext"]
+        },
+ 
+    ],
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.quickSuggestionsDelay": 0,
+}
