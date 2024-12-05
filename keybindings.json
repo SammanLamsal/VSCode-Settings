@@ -1,0 +1,126 @@
+[
+    // NAVIGATION
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown",
+        "when": "vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight",
+        "when": "vim.mode != 'Insert'"
+    },
+    // NAVIGATING BETWEEN TABS
+    {
+        "key": "shift+l",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "vim.mode == 'Normal' && editorFocus"
+    },
+    {
+        "key": "shift+h",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "vim.mode == 'Normal' && editorFocus"
+    },
+    // RESIZING TERMINAL INSTANCES
+    {
+        "key": "alt+h",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus"
+    },
+    // MANAGING TERMINAL INSTANCES
+    {
+        "key": "ctrl+space shift+5",
+        "command": "workbench.action.createTerminalEditorSide",
+    },
+    {
+        "key": "ctrl+space d",
+        "command": "workbench.action.terminal.detachSession",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space x",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space shift+'",
+        "command": "workbench.action.terminal.new",
+    },
+    // TAB AUTOCOMPLETE/SUGGESTIONS
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "textInputFocus && suggestWidgetVisible && suggestWidgetMultipleSuggestions"
+    },
+    {
+        "key": "tab",
+        "command": "acceptSelectedSuggestion",
+        "when": "textInputFocus && suggestWidgetVisible && !suggestWidgetMultipleSuggestions"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "enter",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    // WORKING IN THE FILE EXPLORER
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "moveFileToTrash",
+        "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+]
