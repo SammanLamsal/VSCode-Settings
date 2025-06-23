@@ -40,5 +40,8 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "never"
     }
-  }
+  },
+  "editor.rulers": [
+    80
+  ]
 }
