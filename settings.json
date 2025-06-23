@@ -36,4 +36,9 @@
   "redhat.telemetry.enabled": false,
   "breadcrumbs.enabled": false,
   "vim.cursorStylePerMode.visual": "block",
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
+  }
 }
