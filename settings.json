@@ -28,20 +28,38 @@
       "commands": [
         "workbench.action.toggleSidebarVisibility"
       ]
+    }, 
+      {
+        "before": [
+          "[",
+          "f"
+        ],
+        "commands": [
+          "workbench.action.nextEditorInGroup"
+        ]
+      },
+      {
+        "before": [
+          "[",
+          "b"
+        ],
+        "commands": [
+          "workbench.action.previousEditorInGroup"
+        ]
+      }
+    ],
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.quickSuggestionsDelay": 0,
+    "redhat.telemetry.enabled": false,
+    "breadcrumbs.enabled": false,
+    "vim.cursorStylePerMode.visual": "block",
+    "[go]": {
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "never"
+      }
     },
-  ],
-  "editor.acceptSuggestionOnEnter": "on",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.quickSuggestionsDelay": 0,
-  "redhat.telemetry.enabled": false,
-  "breadcrumbs.enabled": false,
-  "vim.cursorStylePerMode.visual": "block",
-  "[go]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "never"
-    }
-  },
-  "editor.rulers": [
-    80
-  ]
-}
+    "editor.rulers": [
+      80
+    ]
+  }

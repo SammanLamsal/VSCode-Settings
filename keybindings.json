@@ -20,17 +20,6 @@
         "command": "workbench.action.navigateRight",
         "when": "vim.mode != 'Insert'"
     },
-    // NAVIGATING BETWEEN TABS
-    {
-        "key": "shift+l",
-        "command": "workbench.action.nextEditorInGroup",
-        "when": "vim.mode == 'Normal' && editorFocus"
-    },
-    {
-        "key": "shift+h",
-        "command": "workbench.action.previousEditorInGroup",
-        "when": "vim.mode == 'Normal' && editorFocus"
-    },
     // RESIZING TERMINAL INSTANCES
     {
         "key": "alt+h",
