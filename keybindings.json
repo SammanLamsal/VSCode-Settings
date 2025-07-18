@@ -62,24 +62,31 @@
     },
     // TAB AUTOCOMPLETE/SUGGESTIONS
     {
-        "key": "tab",
+        "key": "ctrl+n",
         "command": "selectNextSuggestion",
         "when": "textInputFocus && suggestWidgetVisible && suggestWidgetMultipleSuggestions"
     },
     {
-        "key": "tab",
-        "command": "acceptSelectedSuggestion",
-        "when": "textInputFocus && suggestWidgetVisible && !suggestWidgetMultipleSuggestions"
-    },
-    {
-        "key": "shift+tab",
+        "key": "ctrl+b",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetVisible"
     },
     {
-        "key": "enter",
+        "key": "ctrl+y",
         "command": "acceptSelectedSuggestion",
         "when": "suggestWidgetVisible"
+    },
+    {
+        // disable tab selecting suggestions
+        "key": "tab",
+        "command": "-acceptSelectedSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        // make tab insert a normal tab
+        "key": "tab",
+        "command": "tab",
+        "when": "editorTextFocus"
     },
     // WORKING IN THE FILE EXPLORER
     {
